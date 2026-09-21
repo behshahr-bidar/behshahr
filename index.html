@@ -1,115 +1,734 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070a12">
+<title>بهشهر بیدار | رسانه و شبکه‌های اجتماعی</title>
+<meta name="description" content="صفحهٔ رسمی دسترسی سریع به شبکه‌های اجتماعی و پیام‌رسان‌های «بهشهر بیدار»؛ اینستاگرام، تلگرام، ایتا و روبیکا، به‌همراه حساب ویژهٔ فرمانده و رسانهٔ همکار متنا بهشهر.">
+<meta name="author" content="بهشهر بیدار">
+<link rel="canonical" href="https://behshahr-bidar.github.io/behshahr/">
+<meta name="format-detection" content="telephone=no">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<!-- Open Graph / اشتراک‌گذاری در پیام‌رسان‌ها -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="بهشهر بیدار">
+<meta property="og:title" content="بهشهر بیدار | رسانه و شبکه‌های اجتماعی">
+<meta property="og:description" content="روایت بیدارِ شهر بهشهر؛ یک لمس تا همراهی در اینستاگرام، تلگرام، ایتا و روبیکا.">
+<meta property="og:url" content="https://behshahr-bidar.github.io/behshahr/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="بهشهر بیدار | رسانه و شبکه‌های اجتماعی">
+<meta name="twitter:description" content="روایت بیدارِ شهر بهشهر؛ یک لمس تا همراهی در شبکه‌های اجتماعی.">
 
-    <title>اولین سایت من</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20x='4'%20y='4'%20width='56'%20height='56'%20rx='16'%20fill='%23070a12'/%3E%3Crect%20x='5'%20y='5'%20width='54'%20height='54'%20rx='15'%20fill='none'%20stroke='%23e9b968'%20stroke-width='2'/%3E%3Ccircle%20cx='32'%20cy='31'%20r='3.2'%20fill='%23e9b968'/%3E%3Cpath%20d='M24%2025a11%2011%200%200%201%2016%200'%20fill='none'%20stroke='%23e9b968'%20stroke-width='3'%20stroke-linecap='round'/%3E%3Cpath%20d='M19%2019.5a18%2018%200%200%201%2026%200'%20fill='none'%20stroke='%23e9b968'%20stroke-width='3'%20stroke-linecap='round'%20opacity='.5'/%3E%3Cpath%20d='M17%2046h8v-8h6v8h5v-11l3-3%203%203v11h5v-9h6v9'%20fill='none'%20stroke='%238fa3c0'%20stroke-width='2.4'%20stroke-linejoin='round'/%3E%3C/svg%3E">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5.1.1/index.css">
 
-        body {
-            margin: 0;
-            min-height: 100vh;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "بهشهر بیدار",
+  "description": "رسانهٔ اجتماعی مردم و شهر بهشهر",
+  "url": "https://behshahr-bidar.github.io/behshahr/",
+  "sameAs": [
+    "https://www.instagram.com/behshahre_bidar",
+    "https://t.me/behshahr_bidar",
+    "https://eitaa.com/behshahr_bidar",
+    "https://rubika.ir/behshahr_bidar"
+  ]
+}
+</script>
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+<script>document.documentElement.classList.add('js');</script>
 
-            font-family: Tahoma, Arial, sans-serif;
+<style>
+/* ============ پایه ============ */
+:root{
+  --bg:#070a12;
+  --bg-2:#0b101d;
+  --surface:rgba(255,255,255,.045);
+  --surface-2:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.09);
+  --line-soft:rgba(255,255,255,.06);
+  --text:#eef2f8;
+  --muted:#9aa7bd;
+  --muted-2:#77839a;
+  --gold:#e9b968;
+  --gold-2:#f6d9a0;
+  --gold-deep:#c98b3f;
+  --teal:#59d6c9;
+  --radius:20px;
+  --ease:cubic-bezier(.22,.75,.25,1);
+  --shadow:0 18px 40px -22px rgba(0,0,0,.65);
+  --pad:clamp(16px,4.5vw,32px);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  scroll-padding-top:84px;
+}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Vazirmatn Variable',Vazirmatn,Tahoma,sans-serif;
+  font-size:clamp(.95rem,2.4vw,1.05rem);
+  line-height:1.9;
+  overflow-x:clip;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(233,185,104,.32);color:#fff}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:10px}
 
-            background: linear-gradient(
-                135deg,
-                #667eea,
-                #764ba2
-            );
-        }
+/* پس‌زمینهٔ لایه‌ای */
+.bg{
+  position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(1100px 560px at 88% -12%, rgba(233,185,104,.11), transparent 62%),
+    radial-gradient(900px 520px at 6% 108%, rgba(89,214,201,.08), transparent 62%),
+    radial-gradient(700px 420px at 50% 42%, rgba(64,90,160,.10), transparent 70%),
+    linear-gradient(180deg,#0a101d 0%, #070a12 46%, #05070d 100%);
+}
+.bg::after{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:46px 46px;
+  -webkit-mask-image:radial-gradient(70% 46% at 50% 0%,#000 0%,transparent 78%);
+  mask-image:radial-gradient(70% 46% at 50% 0%,#000 0%,transparent 78%);
+}
 
-        .card {
-            width: min(90%, 600px);
+.wrap{width:min(1120px,100%);margin-inline:auto;padding-inline:var(--pad)}
 
-            padding: 50px;
+/* پرش به محتوا */
+.skip{
+  position:fixed;top:-64px;inset-inline-start:12px;z-index:99;
+  background:var(--gold);color:#141005;font-weight:700;
+  padding:10px 18px;border-radius:12px;transition:top .25s var(--ease);
+}
+.skip:focus{top:12px}
 
-            text-align: center;
+/* ============ نوار بالای چسبان ============ */
+.topbar{
+  position:fixed;top:0;inset-inline:0;z-index:50;
+  transform:translateY(-102%);
+  transition:transform .4s var(--ease);
+  background:rgba(7,10,18,.72);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft);
+}
+.topbar.show{transform:none}
+.topbar-in{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  min-height:60px;padding-block:6px;
+}
+.brand-mini{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1rem}
+.brand-mini svg{width:32px;height:32px}
+.topbar .btn{padding:9px 18px;font-size:.86rem}
 
-            background: white;
+/* ============ دکمه‌ها ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:50px;padding:12px 26px;border-radius:14px;
+  font-weight:700;font-size:.98rem;letter-spacing:0;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,border-color .25s,color .25s;
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation;
+  white-space:nowrap;
+}
+.btn:active{transform:scale(.97)}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-2),var(--gold) 45%,var(--gold-deep));
+  color:#181206;
+  box-shadow:0 12px 30px -14px rgba(233,185,104,.55);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 38px -14px rgba(233,185,104,.6)}
+.btn-ghost{
+  border:1px solid var(--line);color:var(--text);
+  background:var(--surface);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+.btn-ghost:hover{border-color:rgba(233,185,104,.45);background:var(--surface-2);transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
 
-            border-radius: 25px;
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  min-height:100vh;min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding-block:calc(env(safe-area-inset-top,0px) + 84px) 76px;
+  overflow:hidden;
+}
+.hero-rings{
+  position:absolute;top:50%;left:50%;translate:-50% -58%;
+  width:min(150vw,760px);aspect-ratio:1;z-index:-1;pointer-events:none;
+}
+.hero-rings i{
+  position:absolute;inset:0;border-radius:50%;
+  border:1px dashed rgba(233,185,104,.16);
+  animation:spin 90s linear infinite;
+}
+.hero-rings i:nth-child(2){inset:12%;border-color:rgba(89,214,201,.13);animation-duration:70s;animation-direction:reverse}
+.hero-rings i:nth-child(3){inset:26%;border-color:rgba(255,255,255,.08);animation-duration:110s}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-            box-shadow:
-                0 20px 50px rgba(0, 0, 0, 0.25);
-        }
+.hero-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(16px,3.4vw,24px)}
 
-        h1 {
-            margin-top: 0;
+.emblem{
+  width:clamp(88px,22vw,116px);height:auto;
+  filter:drop-shadow(0 14px 34px rgba(233,185,104,.28));
+}
+.badge{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:8px 16px;border-radius:999px;
+  border:1px solid rgba(233,185,104,.28);
+  background:rgba(233,185,104,.08);
+  color:var(--gold-2);font-size:.8rem;font-weight:600;letter-spacing:.02em;
+}
+.pulse{position:relative;width:8px;height:8px;border-radius:50%;background:var(--teal);flex:none}
+.pulse::after{
+  content:"";position:absolute;inset:-4px;border-radius:50%;
+  border:1px solid var(--teal);opacity:.7;animation:pulse 2.2s var(--ease) infinite;
+}
+@keyframes pulse{0%{transform:scale(.5);opacity:.8}100%{transform:scale(1.5);opacity:0}}
 
-            color: #333;
+.hero h1{
+  font-size:clamp(2.5rem,11vw,4.9rem);
+  font-weight:900;line-height:1.28;letter-spacing:-.01em;
+}
+.hero h1 .glow{
+  background:linear-gradient(120deg,var(--gold-2) 10%,var(--gold) 50%,var(--gold-deep) 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .lead{
+  max-width:34ch;color:var(--text);
+  font-size:clamp(1.05rem,3.6vw,1.42rem);font-weight:700;line-height:1.85;
+}
+.hero .sub{max-width:44ch;color:var(--muted);font-size:clamp(.9rem,2.7vw,1.02rem)}
 
-            font-size: 40px;
-        }
+.hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:4px}
 
-        p {
-            color: #666;
+.hero-stats{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px 8px;
+  margin-top:10px;width:100%;
+}
+.stat{
+  display:flex;align-items:baseline;gap:7px;
+  padding:10px 18px;border-radius:14px;
+  border:1px solid var(--line-soft);background:rgba(255,255,255,.03);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.stat b{font-size:1.12rem;font-weight:800;color:var(--gold-2)}
+.stat span{font-size:.8rem;color:var(--muted)}
+.stat + .stat{border-inline-start:0}
+@media(max-width:430px){
+  .hero-stats{flex-direction:column;align-items:stretch;max-width:280px;margin-inline:auto}
+  .stat{justify-content:center;border-inline-start:1px solid var(--line-soft)}
+}
 
-            font-size: 20px;
+.scroll-cue{
+  position:absolute;bottom:20px;left:50%;translate:-50% 0;
+  color:var(--muted-2);animation:cue 2.4s var(--ease) infinite;
+}
+.scroll-cue svg{width:22px;height:22px}
+@keyframes cue{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(7px);opacity:1}}
 
-            line-height: 2;
-        }
+/* ورود HERO */
+.js .a{opacity:0;transform:translateY(18px);animation:rise .75s var(--ease) forwards}
+.js .a1{animation-delay:.05s}.js .a2{animation-delay:.14s}.js .a3{animation-delay:.24s}
+.js .a4{animation-delay:.34s}.js .a5{animation-delay:.44s}.js .a6{animation-delay:.54s}
+@keyframes rise{to{opacity:1;transform:none}}
 
-        button {
-            border: none;
+/* ============ بخش‌ها ============ */
+.section{padding-block:clamp(52px,9vw,96px);position:relative}
+.section + .section{border-top:1px solid transparent}
+.section + .section::before{
+  content:"";position:absolute;top:-1px;inset-inline:8%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);
+}
+.sec-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;margin-bottom:clamp(26px,5vw,44px)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.76rem;font-weight:700;letter-spacing:.14em;color:var(--muted);
+}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:linear-gradient(90deg,transparent,rgba(233,185,104,.6));}
+.eyebrow::after{background:linear-gradient(90deg,rgba(233,185,104,.6),transparent)}
+.sec-head h2{font-size:clamp(1.5rem,5.4vw,2.3rem);font-weight:800;line-height:1.5}
+.sec-head p{max-width:52ch;color:var(--muted);font-size:clamp(.88rem,2.6vw,.98rem)}
 
-            padding: 15px 30px;
+/* ============ کارت شبکه‌ها ============ */
+.net-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:640px){.net-grid{grid-template-columns:1fr 1fr;gap:18px}}
 
-            border-radius: 12px;
+.pc-insta{--ac:#ef5d8f;--ac-bg:rgba(228,64,95,.13);--ac-bd:rgba(228,64,95,.38);--ac-glow:rgba(228,64,95,.35)}
+.pc-tg{--ac:#41b9ea;--ac-bg:rgba(42,171,238,.12);--ac-bd:rgba(42,171,238,.38);--ac-glow:rgba(42,171,238,.35)}
+.pc-eitaa{--ac:#f2883f;--ac-bg:rgba(242,136,63,.12);--ac-bd:rgba(242,136,63,.4);--ac-glow:rgba(242,136,63,.35)}
+.pc-rubika{--ac:#9d8bff;--ac-bg:rgba(143,123,255,.12);--ac-bd:rgba(143,123,255,.4);--ac-glow:rgba(143,123,255,.35)}
+.pc-matna{--ac:#46d0bf;--ac-bg:rgba(70,208,191,.11);--ac-bd:rgba(70,208,191,.38);--ac-glow:rgba(70,208,191,.32)}
 
-            background: #667eea;
+.net-card{
+  position:relative;display:flex;align-items:center;gap:15px;
+  padding:18px 18px;border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.02));
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  box-shadow:var(--shadow);
+  min-height:96px;overflow:hidden;
+  transition:transform .3s var(--ease),border-color .3s,box-shadow .3s,background .3s;
+  -webkit-tap-highlight-color:transparent;
+}
+.net-card::after{
+  content:"";position:absolute;inset-inline-start:0;top:22%;bottom:22%;width:3px;border-radius:3px;
+  background:var(--ac);opacity:0;transition:opacity .3s;
+}
+.net-card:hover,.net-card:focus-visible{
+  transform:translateY(-5px);
+  border-color:var(--ac-bd);
+  box-shadow:0 22px 44px -20px var(--ac-glow),var(--shadow);
+}
+.net-card:hover::after,.net-card:focus-visible::after{opacity:1}
+.net-card:active{transform:translateY(-1px) scale(.985)}
 
-            color: white;
+.net-icon{
+  flex:none;width:54px;height:54px;border-radius:16px;
+  display:grid;place-items:center;
+  background:var(--ac-bg);border:1px solid var(--ac-bd);
+  transition:transform .3s var(--ease),box-shadow .3s;
+}
+.net-icon svg{width:27px;height:27px}
+.net-card:hover .net-icon{transform:scale(1.07) rotate(-3deg);box-shadow:0 8px 22px -10px var(--ac-glow)}
 
-            font-size: 18px;
+.net-body{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.net-name{display:flex;align-items:baseline;gap:8px;font-weight:800;font-size:1.06rem}
+.net-name .latin{font-size:.72rem;font-weight:600;color:var(--muted-2);letter-spacing:.06em}
+.net-handle{font-size:.78rem;color:var(--ac);font-weight:600;letter-spacing:.02em}
+.net-desc{font-size:.8rem;color:var(--muted);line-height:1.7;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-            cursor: pointer;
-        }
+.net-arrow{
+  flex:none;width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;
+  border:1px solid var(--line);color:var(--muted);
+  transition:transform .3s var(--ease),background .3s,color .3s,border-color .3s;
+}
+.net-arrow svg{width:17px;height:17px}
+.net-card:hover .net-arrow{background:var(--ac-bg);color:var(--ac);border-color:var(--ac-bd);transform:translateX(-4px)}
 
-        button:hover {
-            opacity: 0.85;
-        }
-    </style>
+/* ============ بخش فرمانده ============ */
+.cmd{
+  position:relative;border-radius:26px;overflow:hidden;
+  border:1px solid rgba(233,185,104,.3);
+  background:
+    radial-gradient(120% 130% at 100% 0%,rgba(233,185,104,.14),transparent 55%),
+    linear-gradient(150deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  box-shadow:0 26px 60px -30px rgba(233,185,104,.35),var(--shadow);
+  padding:clamp(24px,5vw,40px);
+  display:grid;gap:22px;justify-items:center;text-align:center;
+}
+.cmd::before{
+  content:"";position:absolute;inset:6px;border-radius:20px;
+  border:1px dashed rgba(233,185,104,.22);pointer-events:none;
+}
+@media(min-width:820px){
+  .cmd{grid-template-columns:auto 1fr auto;align-items:center;justify-items:start;text-align:start}
+}
+.cmd-tag{
+  position:absolute;top:18px;inset-inline-start:22px;
+  font-size:.7rem;font-weight:800;letter-spacing:.16em;color:#181206;
+  background:linear-gradient(135deg,var(--gold-2),var(--gold));
+  padding:5px 13px;border-radius:999px;
+}
+.cmd-medal{
+  width:clamp(96px,24vw,128px);height:auto;flex:none;
+  filter:drop-shadow(0 12px 28px rgba(233,185,104,.3));
+}
+.cmd-body{display:flex;flex-direction:column;gap:8px;align-items:center}
+@media(min-width:820px){.cmd-body{align-items:flex-start}}
+.cmd-body h3{font-size:clamp(1.4rem,5vw,1.9rem);font-weight:900}
+.cmd-body .cmd-handle{color:var(--gold-2);font-size:.85rem;font-weight:700}
+.cmd-body p{color:var(--muted);font-size:clamp(.86rem,2.6vw,.95rem);max-width:46ch}
+.cmd .btn{width:100%;max-width:320px}
+@media(min-width:820px){.cmd .btn{width:auto}}
+
+/* ============ متنا بهشهر ============ */
+.matna-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:640px){.matna-grid{grid-template-columns:1fr 1fr;gap:18px}}
+.matna-grid .net-card{min-height:88px;padding:16px}
+.matna-grid .net-icon{width:48px;height:48px;border-radius:14px}
+.matna-grid .net-icon svg{width:24px;height:24px}
+
+/* ============ CTA پایانی ============ */
+.final{
+  border-radius:26px;text-align:center;
+  padding:clamp(34px,7vw,64px) clamp(20px,5vw,48px);
+  border:1px solid var(--line);
+  background:
+    radial-gradient(90% 120% at 50% -20%,rgba(89,214,201,.1),transparent 60%),
+    radial-gradient(90% 120% at 50% 120%,rgba(233,185,104,.1),transparent 60%),
+    linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  display:flex;flex-direction:column;align-items:center;gap:16px;
+  box-shadow:var(--shadow);
+}
+.final h2{font-size:clamp(1.45rem,5.6vw,2.2rem);font-weight:900}
+.final p{color:var(--muted);max-width:46ch;font-size:clamp(.88rem,2.7vw,.98rem)}
+.final-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px}
+
+/* ============ Footer ============ */
+footer{
+  border-top:1px solid var(--line-soft);
+  padding:26px 0 calc(26px + env(safe-area-inset-bottom,0px));
+}
+.foot-in{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.foot-brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:.95rem}
+.foot-brand svg{width:26px;height:26px}
+.foot-in p{color:var(--muted-2);font-size:.78rem}
+
+/* ============ نمایان‌شدن هنگام اسکرول ============ */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0)*80ms)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ============ Toast ============ */
+.toast{
+  position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;
+  translate:-50% 20px;opacity:0;z-index:80;pointer-events:none;
+  background:rgba(16,22,36,.92);border:1px solid rgba(233,185,104,.35);
+  color:var(--gold-2);font-size:.85rem;font-weight:600;
+  padding:11px 22px;border-radius:999px;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  box-shadow:0 14px 34px -16px rgba(0,0,0,.7);
+  transition:translate .35s var(--ease),opacity .35s;
+  max-width:calc(100vw - 32px);text-align:center;
+}
+.toast.show{translate:-50% 0;opacity:1}
+
+/* ============ حرکت کاهش‌یافته ============ */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal,.js .a{opacity:1!important;transform:none!important}
+}
+</style>
 </head>
-
 <body>
 
-    <div class="card">
+<a class="skip" href="#networks">پرش به شبکه‌های اجتماعی</a>
+<div class="bg" aria-hidden="true"></div>
 
-        <h1>سلام 👋</h1>
+<!-- نوار چسبان -->
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-in">
+    <span class="brand-mini">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="16" fill="rgba(255,255,255,.05)"/><rect x="5" y="5" width="54" height="54" rx="15" fill="none" stroke="#e9b968" stroke-width="2"/><circle cx="32" cy="31" r="3.2" fill="#e9b968"/><path d="M24 25a11 11 0 0 1 16 0" fill="none" stroke="#e9b968" stroke-width="3" stroke-linecap="round"/><path d="M19 19.5a18 18 0 0 1 26 0" fill="none" stroke="#e9b968" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M17 46h8v-8h6v8h5v-11l3-3 3 3v11h5v-9h6v9" fill="none" stroke="#8fa3c0" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      بهشهر بیدار
+    </span>
+    <a class="btn btn-gold" href="#networks">شبکه‌های ما</a>
+  </div>
+</header>
 
-        <p>
-            این اولین صفحه وب من است
-            که با GitHub Pages ساخته شده!
-        </p>
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-label="معرفی بهشهر بیدار">
+    <div class="hero-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wrap hero-in">
 
-        <button onclick="showMessage()">
-            کلیک کن
+      <svg class="emblem a a1" viewBox="0 0 120 120" role="img" aria-label="نشان بهشهر بیدار">
+        <defs>
+          <linearGradient id="gld" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f6d9a0"/><stop offset=".55" stop-color="#e9b968"/><stop offset="1" stop-color="#c98b3f"/>
+          </linearGradient>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#a9bbd8"/><stop offset="1" stop-color="#66788f"/>
+          </linearGradient>
+        </defs>
+        <rect x="5" y="5" width="110" height="110" rx="30" fill="rgba(255,255,255,.045)"/>
+        <rect x="5.8" y="5.8" width="108.4" height="108.4" rx="29" fill="none" stroke="url(#gld)" stroke-width="1.6"/>
+        <circle cx="60" cy="52" r="4" fill="url(#gld)"/>
+        <path d="M49 45a15.5 15.5 0 0 1 22 0" fill="none" stroke="url(#gld)" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M41.5 37.5a26 26 0 0 1 37 0" fill="none" stroke="url(#gld)" stroke-width="3.4" stroke-linecap="round" opacity=".55"/>
+        <path d="M26 84h11V70h8v14h7V62l5-5 5 5v22h7V72h8v12h11" fill="none" stroke="url(#sky)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+
+      <span class="badge a a2"><span class="pulse" aria-hidden="true"></span> رسانهٔ اجتماعی مردم بهشهر</span>
+
+      <h1 class="a a3">بهشهر <span class="glow">بیدار</span></h1>
+
+      <p class="lead a a4">شهر را از نزدیک‌تر ببینید؛ روایتِ بیدارِ مردم، خیابان‌ها و لحظه‌های بهشهر.</p>
+      <p class="sub a a4">خبر، تصویر و گزارش میدانی در شبکه‌های اجتماعی ما؛ فقط یک لمس تا همراهی فاصله است.</p>
+
+      <div class="hero-cta a a5">
+        <a class="btn btn-gold" href="#networks">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          ما را دنبال کنید
+        </a>
+        <button class="btn btn-ghost" type="button" data-share>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          اشتراک‌گذاری صفحه
         </button>
+      </div>
 
-        <p id="message"></p>
-
+      <div class="hero-stats a a6" aria-label="آمار شبکه‌ها">
+        <div class="stat"><b>۴+</b><span>شبکهٔ رسمی</span></div>
+        <div class="stat"><b>۲</b><span>رسانهٔ همکار</span></div>
+        <div class="stat"><b>هر روز</b><span>روایت بی‌وقفهٔ شهر</span></div>
+      </div>
     </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
 
+  <!-- ================= شبکه‌های اصلی ================= -->
+  <section class="section" id="networks" aria-labelledby="net-title">
+    <div class="wrap">
+      <div class="sec-head reveal" style="--i:0">
+        <span class="eyebrow">۰۱ · شبکه‌های رسمی</span>
+        <h2 id="net-title">در شبکه‌های اجتماعی همراه ما باشید</h2>
+        <p>کانال‌ها و صفحه‌های رسمی «بهشهر بیدار»؛ شبکهٔ دلخواه‌تان را انتخاب کنید.</p>
+      </div>
 
-    <script>
-        function showMessage() {
+      <div class="net-grid">
+        <a class="net-card pc-insta reveal" style="--i:1" href="https://www.instagram.com/behshahre_bidar?stkn=dWs1Z3Jza3JtZXYw" aria-label="صفحهٔ اینستاگرام بهشهر بیدار">
+          <span class="net-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ef5d8f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.1" cy="6.9" r="1.25" fill="#ef5d8f" stroke="none"/></svg>
+          </span>
+          <span class="net-body">
+            <span class="net-name">اینستاگرام <span class="latin" dir="ltr">Instagram</span></span>
+            <span class="net-handle" dir="ltr">@behshahre_bidar</span>
+            <span class="net-desc">روایت تصویری زندگی روزمرهٔ بهشهر</span>
+          </span>
+          <span class="net-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+        </a>
 
-            document.getElementById("message").innerText =
-                "🎉 سایت من با موفقیت اجرا شد!";
-        }
-    </script>
+        <a class="net-card pc-tg reveal" style="--i:2" href="https://t.me/behshahr_bidar" aria-label="کانال تلگرام بهشهر بیدار">
+          <span class="net-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#41b9ea"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </span>
+          <span class="net-body">
+            <span class="net-name">تلگرام <span class="latin" dir="ltr">Telegram</span></span>
+            <span class="net-handle" dir="ltr">@behshahr_bidar</span>
+            <span class="net-desc">کانال رسمی خبرها و اطلاعیه‌ها</span>
+          </span>
+          <span class="net-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+        </a>
 
+        <a class="net-card pc-eitaa reveal" style="--i:3" href="https://eitaa.com/behshahr_bidar" aria-label="کانال ایتای بهشهر بیدار">
+          <span class="net-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f2883f" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M18.1 10.6a6.4 6.4 0 1 0 .3 3.1"/><path d="M18.4 13.7c1.6-1.9 2.4-4.3 2.5-6.6-1.5 1-2.7 2.2-3.6 3.7"/></svg>
+          </span>
+          <span class="net-body">
+            <span class="net-name">ایتا <span class="latin" dir="ltr">Eitaa</span></span>
+            <span class="net-handle" dir="ltr">@behshahr_bidar</span>
+            <span class="net-desc">همراه ما در پیام‌رسان ایرانی ایتا</span>
+          </span>
+          <span class="net-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+        </a>
+
+        <a class="net-card pc-rubika reveal" style="--i:4" href="https://rubika.ir/behshahr_bidar" aria-label="کانال روبیکای بهشهر بیدار">
+          <span class="net-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="rb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ee05c"/><stop offset="1" stop-color="#25c9a5"/></linearGradient>
+                <linearGradient id="rb2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b6bf0"/><stop offset="1" stop-color="#8a4df0"/></linearGradient>
+                <linearGradient id="rb3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a3c"/><stop offset="1" stop-color="#f0426c"/></linearGradient>
+              </defs>
+              <path d="M12 2.6l8 4.5-8 4.5-8-4.5z" fill="url(#rb1)"/>
+              <path d="M4 7.1l8 4.5v9.8l-8-4.5z" fill="url(#rb2)"/>
+              <path d="M20 7.1l-8 4.5v9.8l8-4.5z" fill="url(#rb3)"/>
+            </svg>
+          </span>
+          <span class="net-body">
+            <span class="net-name">روبیکا <span class="latin" dir="ltr">Rubika</span></span>
+            <span class="net-handle" dir="ltr">@behshahr_bidar</span>
+            <span class="net-desc">دسترسی آسان در پیام‌رسان روبیکا</span>
+          </span>
+          <span class="net-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= فرمانده ================= -->
+  <section class="section" aria-labelledby="cmd-title">
+    <div class="wrap">
+      <div class="sec-head reveal" style="--i:0">
+        <span class="eyebrow">۰۲ · حساب ویژه</span>
+        <h2 id="cmd-title">فرمانده</h2>
+        <p>نگاه میدانی و روایتی نزدیک‌تر از لنز فرماندهٔ مجموعه؛ پشت‌صحنهٔ بهشهر بیدار.</p>
+      </div>
+
+      <div class="cmd reveal" style="--i:1">
+        <span class="cmd-tag">ویژه</span>
+        <svg class="cmd-medal" viewBox="0 0 120 120" role="img" aria-label="نشان فرمانده">
+          <defs>
+            <linearGradient id="cg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6d9a0"/><stop offset=".55" stop-color="#e9b968"/><stop offset="1" stop-color="#c98b3f"/>
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="52" fill="rgba(233,185,104,.07)"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="url(#cg)" stroke-width="1.6"/>
+          <circle cx="60" cy="60" r="42" fill="none" stroke="url(#cg)" stroke-width="1" stroke-dasharray="3 6" opacity=".7"/>
+          <path d="M60 34l7.6 15.6 17.2 2.5-12.4 12.1 2.9 17.1L60 73.2l-15.3 8.1 2.9-17.1-12.4-12.1 17.2-2.5z" fill="none" stroke="url(#cg)" stroke-width="2.6" stroke-linejoin="round"/>
+          <circle cx="60" cy="60" r="5" fill="url(#cg)"/>
+        </svg>
+        <div class="cmd-body">
+          <h3>فرمانده</h3>
+          <span class="cmd-handle" dir="ltr">@mohammad.b.ghe</span>
+          <p>روایت‌های میدانی، پشت‌صحنهٔ گزارش‌ها و نگاه نزدیک فرماندهٔ مجموعه بهشهر بیدار به شهر و مردمش.</p>
+        </div>
+        <a class="btn btn-gold" href="https://www.instagram.com/mohammad.b.ghe?stkn=Y2NjcXM3Z3pmNWU0" aria-label="صفحهٔ اینستاگرام فرمانده">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.1" cy="6.9" r="1.25" fill="currentColor" stroke="none"/></svg>
+          دنبال‌کردن در اینستاگرام
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= متنا بهشهر ================= -->
+  <section class="section" aria-labelledby="matna-title">
+    <div class="wrap">
+      <div class="sec-head reveal" style="--i:0">
+        <span class="eyebrow">۰۳ · رسانهٔ همکار</span>
+        <h2 id="matna-title">متنا بهشهر</h2>
+        <p>صدای همسایهٔ ما؛ پوشش خبری و فرهنگی بهشهر از دریچه‌ای دیگر.</p>
+      </div>
+
+      <div class="matna-grid">
+        <a class="net-card pc-matna reveal" style="--i:1" href="https://t.me/matnabehshahr" aria-label="کانال تلگرام متنا بهشهر">
+          <span class="net-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#46d0bf"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </span>
+          <span class="net-body">
+            <span class="net-name">کانال تلگرام</span>
+            <span class="net-handle" dir="ltr">@matnabehshahr</span>
+            <span class="net-desc">خبرها و مطالب خواندنی متنا</span>
+          </span>
+          <span class="net-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+        </a>
+
+        <a class="net-card pc-matna reveal" style="--i:2" href="https://www.instagram.com/matnabehshahr?stkn=MTI3eWUyMTZsdnFqdA==" aria-label="صفحهٔ اینستاگرام متنا بهشهر">
+          <span class="net-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#46d0bf" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.1" cy="6.9" r="1.25" fill="#46d0bf" stroke="none"/></svg>
+          </span>
+          <span class="net-body">
+            <span class="net-name">صفحهٔ اینستاگرام</span>
+            <span class="net-handle" dir="ltr">@matnabehshahr</span>
+            <span class="net-desc">روایت تصویری متنا بهشهر</span>
+          </span>
+          <span class="net-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA پایانی ================= -->
+  <section class="section" aria-labelledby="final-title">
+    <div class="wrap">
+      <div class="final reveal" style="--i:0">
+        <h2 id="final-title">همراه بهشهر بیدار باشید</h2>
+        <p>با دنبال‌کردن و هم‌رسانی این صفحه، صدای شهر را به دست همسایه‌ها برسانید؛ روایت ما با همراهی شما کامل می‌شود.</p>
+        <div class="final-cta">
+          <button class="btn btn-gold" type="button" data-share>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+            اشتراک‌گذاری صفحه
+          </button>
+          <a class="btn btn-ghost" href="#networks">مشاهدهٔ شبکه‌ها</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="foot-brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="16" fill="rgba(255,255,255,.05)"/><rect x="5" y="5" width="54" height="54" rx="15" fill="none" stroke="#e9b968" stroke-width="2"/><circle cx="32" cy="31" r="3.2" fill="#e9b968"/><path d="M24 25a11 11 0 0 1 16 0" fill="none" stroke="#e9b968" stroke-width="3" stroke-linecap="round"/><path d="M17 46h8v-8h6v8h5v-11l3-3 3 3v11h5v-9h6v9" fill="none" stroke="#8fa3c0" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      بهشهر بیدار | رسانه‌ای برای مردم و شهر بهشهر
+    </span>
+    <p>© ۱۴۰۴ بهشهر بیدار · تمامی حقوق محفوظ است.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><style>.reveal,.a{opacity:1!important;transform:none!important}</style></noscript>
+
+<script>
+(function(){
+  "use strict";
+
+  /* نمایان‌شدن تدریجی بخش‌ها */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold:.12, rootMargin:'0px 0px -6% 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* نوار چسبان پس از عبور از Hero */
+  var topbar = document.getElementById('topbar');
+  var onScroll = function(){
+    topbar.classList.toggle('show', window.scrollY > window.innerHeight * .6);
+  };
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  /* Toast */
+  var toastEl = document.getElementById('toast'), toastTimer;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2800);
+  }
+
+  /* اشتراک‌گذاری صفحه */
+  function copyFallback(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly','');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch(e){ ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var data = {
+        title: 'بهشهر بیدار | رسانه و شبکه‌های اجتماعی',
+        text: 'روایت بیدارِ شهر بهشهر؛ شبکه‌های اجتماعی بهشهر بیدار را دنبال کنید.',
+        url: location.href
+      };
+      if (navigator.share) {
+        navigator.share(data).catch(function(){});
+        return;
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(data.url)
+          .then(function(){ toast('پیوند صفحه کپی شد؛ آمادهٔ ارسال است.'); })
+          .catch(function(){ toast(copyFallback(data.url) ? 'پیوند صفحه کپی شد.' : data.url); });
+      } else {
+        toast(copyFallback(data.url) ? 'پیوند صفحه کپی شد.' : data.url);
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
